@@ -1,0 +1,19 @@
+<div class="favorites_page" ng-controller="FavoritesController as favorites">
+    <h2>Favorites</h2>
+    <table border="1">
+        <tr ng-repeat="item in favorites.items">
+            <td>
+                <div class="row book_item">
+                    <div class="col-4 image_box">
+                        <img ng-src="{{item.volumeInfo.imageLinks.thumbnail}}" />
+                    </div> 
+                    <div class="col-8 text_box">
+                        <div class="book_name">{{item.volumeInfo.title}}</div>
+                        <a href="/#!/book/{{item.id}}" class="book_name">More Info</a>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+</div>

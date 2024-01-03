@@ -1,0 +1,23 @@
+<div class="book_page" ng-controller="BookController as book">
+    
+
+
+
+
+
+
+    <div class="row book_item">
+        <div class="col-4 image_box">
+            <img ng-src="{{book.book.volumeInfo.imageLinks.thumbnail}}" />
+        </div> 
+        <div class="col-8 text_box">
+            <div class="book_name">{{book.book.volumeInfo.title}}</div>
+            <button class="book_name" ng-if="book.isFavorite == false" ng-click="book.setFavorite(book.book.id)">Add to favorites</button>
+            <button class="book_name" ng-if="book.isFavorite" ng-click="book.removeFromFavorite(book.book.id)">Remove from favorites</button>
+        
+        </div>
+    </div>
+
+    
+
+</div>

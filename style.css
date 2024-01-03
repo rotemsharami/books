@@ -1,0 +1,17 @@
+.book_list_page{
+
+}
+
+.book_list_page table{
+    width: 100%;
+}
+
+.book_list_page .image_box{
+    text-align: center;
+    background: #ebebeb;
+}
+
+.book_list_page .book_item{
+    padding: 0px;
+    margin: 0px;
+}
